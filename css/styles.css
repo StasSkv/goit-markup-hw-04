@@ -134,6 +134,10 @@ a {
   padding: 10px 0;
 }
 
+.navigation-studio {
+  color: #404bbf;
+}
+
 .navigation-studio::after {
   content: "";
   background-color: #404bbf;
@@ -141,6 +145,7 @@ a {
   width: 48px;
   height: 4px;
   display: block;
+ 
 }
 
 /* 
