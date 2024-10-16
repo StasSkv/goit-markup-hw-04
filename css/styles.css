@@ -93,6 +93,8 @@ a {
 
 .menu {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .menu-container {
@@ -136,6 +138,7 @@ a {
 
 .navigation-studio {
   color: #404bbf;
+  position: relative;
 }
 
 .navigation-studio::after {
@@ -145,7 +148,9 @@ a {
   width: 48px;
   height: 4px;
   display: block;
- 
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 /* 
@@ -344,8 +349,7 @@ a {
   border-radius: 50%;
   display: flex;
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icons-svg {
@@ -457,6 +461,7 @@ a {
 
 .end-container {
   display: flex;
+  align-items: baseline;
 }
 
 .end-logo-wrap {
@@ -473,6 +478,10 @@ a {
 }
 
 .end-team-icons-link:hover,
-.endteam-icons-link:focus {
+.end-team-icons-link:focus {
   background-color: #31d0aa;
+}
+
+.end-icons-list {
+  gap: 16px;
 }
